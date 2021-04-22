@@ -8,13 +8,33 @@ export default class FAQList extends Component {
         this.state = {
              faqs : [
                 {
-                    question: 'How many programmers does it take to screw in a lightbulb?',
-                    answer: 'None. We don\'t address hardware issues.',
+                    question: 'Mention Github Link for this project?',
+                    answer: 'Github link: https://github.com/saisitaram2000/tawkto_integration.',
                     isExpand: false
                   },
                   {
-                    question: 'Who is the most awesome person?',
-                    answer: 'You. The Viewer.',
+                    question: 'How do I get support?',
+                    answer: 'We offer 24×7-365 live support via both chat and email. Simply initiate a  chat on our site at any time, and a member of our dedicated support team will help as best as they can.',
+                    isExpand: false
+                  },
+                  {
+                    question: 'Where can I find documentation?',
+                    answer: 'You can find all necessary documentation at my github readme file',
+                    isExpand: false
+                  },
+                  {
+                    question: 'How to connect with you if I have any query?',
+                    answer: 'You can chat with us using bottom-right chat icon.',
+                    isExpand: false
+                  },
+                  {
+                    question: 'Which techstack is used to build this project?',
+                    answer: 'React is used.',
+                    isExpand: false
+                  },
+                  {
+                    question: 'Which platform is used for hosting?',
+                    answer: 'Firebase is used for hosting.',
                     isExpand: false
                   },
                   {
@@ -39,11 +59,11 @@ export default class FAQList extends Component {
     render() {
         const {faqs}=this.state;
         return (
-            <div className="faq-list">
-                {faqs.map((faq,i)=>(
-                    <FAQ key={i} faq={faq} index={i} toggleFAQ={this.toggleFAQ}/>
-                ))}
-            </div>
+                <div className="faq-list">
+                    {faqs.map((faq,i)=>(
+                        <FAQ key={i} faq={faq} index={i} toggleFAQ={this.toggleFAQ}/>
+                    ))}
+                </div> 
         )
     }
 }
