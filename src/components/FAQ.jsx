@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
-
+import './FAQ.css';
 export default class FAQ extends Component {
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-             
-        }
-    }
     render() {
+        const {faq,index,toggleFAQ}=this.props;
         return (
-            <div>
-                
+            <div 
+                className={"faq"+ (faq.isExpand?"-expand":"")} 
+                key={toString(index)} 
+                onClick={()=>toggleFAQ(index)}
+            >
+                <div className="faq-question">{faq.question}</div>
+                <div className="faq-answer">{faq.answer}</div>
             </div>
         )
     }
