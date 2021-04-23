@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import './FAQ.css';
-// import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
-// import HelpIcon from '@material-ui/icons/Help';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 export default class FAQ extends Component {
@@ -14,12 +12,9 @@ export default class FAQ extends Component {
                 onClick={()=>toggleFAQ(index)}
             >
                 <div className="faq-question-icon">
-                    {/* <div className="faq-icon">
-                        {faq.isExpand?<HelpIcon color="primary"/>:<HelpOutlineIcon/>}
-                    </div> */}
                     <div className="faq-question">{faq.question}</div>
                     <div className="faq-icon">
-                        {faq.isExpand?<ExpandMoreIcon/>:<ExpandLessIcon/>}
+                        {faq.isExpand?<ExpandLessIcon/>:<ExpandMoreIcon/>}
                     </div>
                 </div>
                 

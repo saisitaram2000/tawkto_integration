@@ -9,7 +9,7 @@ export default class FAQList extends Component {
              faqs : [
                 {
                     question: 'Mention Github Link for this project?',
-                    answer: 'Github link: https://github.com/saisitaram2000/tawkto_integration.',
+                    answer: 'GithubLink: saisitaram2000/tawkto_integration.',
                     isExpand: false
                   },
                   {
